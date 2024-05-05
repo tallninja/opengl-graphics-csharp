@@ -74,7 +74,8 @@ public class Vector3D
 
 	public Vector3D Normalize()
 	{
-		return this / (float) Norm;
+		if (Norm > 1) return this / (float)Norm;
+		return this;
 	}
 
 	public static Vector3D operator +(Vector3D left, Vector3D right)

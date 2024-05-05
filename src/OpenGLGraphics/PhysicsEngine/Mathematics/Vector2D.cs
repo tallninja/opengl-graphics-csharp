@@ -60,7 +60,8 @@ public class Vector2D
 
 	public Vector2D Normalize()
 	{
-		return this / (float) Norm;
+		if (Norm > 1) return this / (float) Norm;
+		return this;
 	}
 
 	public static Vector2D operator + (Vector2D left, float right)
