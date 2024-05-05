@@ -85,6 +85,14 @@ public class TestVector2D
 	}
 
 	[Fact]
+	public void Test_Normalization()
+	{
+		var vec = new Vector2D(3, 4);
+		var res = vec.Normalize();
+		Assert.Equal(new Vector2D(0.6f, 0.8f), res);
+	}
+
+	[Fact]
 	public void Test_Addition_Of_Scalar_To_Vector()
 	{
 		var vec = new Vector2D(3, 4);

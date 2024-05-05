@@ -72,6 +72,11 @@ public class Vector3D
 		return new Vector3D(rx, ry, rz);
 	}
 
+	public Vector3D Normalize()
+	{
+		return this / (float) Norm;
+	}
+
 	public static Vector3D operator +(Vector3D left, Vector3D right)
 	{
 		return new Vector3D

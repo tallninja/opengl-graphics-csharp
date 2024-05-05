@@ -58,6 +58,11 @@ public class Vector2D
 
 	public double Dot(Vector2D other) => X * other.X + Y * other.Y;
 
+	public Vector2D Normalize()
+	{
+		return this / (float) Norm;
+	}
+
 	public static Vector2D operator + (Vector2D left, float right)
 	{
 		return new Vector2D
