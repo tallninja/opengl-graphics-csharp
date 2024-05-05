@@ -91,6 +91,15 @@ public class TestVector3D
 	}
 
 	[Fact]
+	public void Test_Corss_Product()
+	{
+		var vec0 = new Vector3D(1, 2, 3);
+		var vec1 = new Vector3D(4, 5, 6);
+		var result = vec0.Cross(vec1);
+		Assert.Equal(new Vector3D(-3, 6, -3), result);
+	}
+
+	[Fact]
 	public void Test_Addition_Of_Scalar_To_Vector()
 	{
 		var vec = new Vector3D(3, 4, 5);

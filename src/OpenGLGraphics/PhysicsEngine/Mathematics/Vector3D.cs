@@ -64,6 +64,14 @@ public class Vector3D
 
 	public double Dot(Vector3D other) => (X * other.X) + (Y * other.Y) + (Z * other.Z);
 
+	public Vector3D Cross(Vector3D other)
+	{
+		var rx = Y * other.Z - Z * other.Y;
+		var ry = Z * other.X - X * other.Z;
+		var rz = X * other.Y - Y * other.X;
+		return new Vector3D(rx, ry, rz);
+	}
+
 	public static Vector3D operator +(Vector3D left, Vector3D right)
 	{
 		return new Vector3D
