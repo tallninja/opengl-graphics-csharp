@@ -8,28 +8,18 @@ namespace PhysicsEngine.Mathematics;
 
 public class Vector2D
 {
-	public Vector2D()
+	public Vector2D() : this(0, 0)
 	{
-		X = 0;
-		Y = 0;
 	}
 
-	public Vector2D(float value)
+	public Vector2D(float value) : this(value, value)
 	{
-		X = value;
-		Y = value;
 	}
 
 	public Vector2D(float x, float y)
 	{
 		X = x;
 		Y = y;
-	}
-
-	public void Deconstruct(out float x, out float y)
-	{
-		x = X;
-		y = Y;
 	}
 
 	public float X { get; set; }
@@ -95,6 +85,15 @@ public class Vector2D
 		};
 	}
 
+	public static Vector2D operator /(Vector2D left, float right)
+	{
+		return new Vector2D
+		{
+			X = left.X / right,
+			Y = left.Y / right
+		};
+	}
+
 	public static Vector2D operator + (Vector2D left, Vector2D right)
 	{
 		return new Vector2D
@@ -135,12 +134,18 @@ public class Vector2D
 
 	public static bool operator >= (Vector2D left, Vector2D right)
 	{
-		return left.Norm > right.Norm || Math.Abs(left.Norm - right.Norm) <= 0.00005;
+		return left.Norm >= right.Norm;
 	}
 
 	public static bool operator <= (Vector2D left, Vector2D right)
 	{
-		return left.Norm < right.Norm || Math.Abs(left.Norm - right.Norm) <= 0.00005;
+		return left.Norm <= right.Norm;
+	}
+
+	public void Deconstruct(out float x, out float y)
+	{
+		x = X;
+		y = Y;
 	}
 
 	public override string ToString()
