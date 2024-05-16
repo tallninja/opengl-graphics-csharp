@@ -6,12 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <PackageReference Include="OpenTK" Version="4.8.2" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Utils\Utils.csproj" />
-    </ItemGroup>
-
 </Project>

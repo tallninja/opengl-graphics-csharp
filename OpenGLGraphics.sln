@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGLGraphics", "src\OpenG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendering", "src\Rendering\Rendering.csproj", "{126FDC11-31D4-4435-A96B-D4A9BD08CA7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "src\Utils\Utils.csproj", "{0F485F8A-8C1A-498D-8317-1C12B15694DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F1901D97-1F2F-4CCC-B807-382BD3C31541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils.Test", "src\Tests\Utils.Test\Utils.Test.csproj", "{781B5C1D-AAEB-41AF-AFFA-E0B3FF36B8BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +30,16 @@ Global
 		{126FDC11-31D4-4435-A96B-D4A9BD08CA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{126FDC11-31D4-4435-A96B-D4A9BD08CA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{126FDC11-31D4-4435-A96B-D4A9BD08CA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F485F8A-8C1A-498D-8317-1C12B15694DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F485F8A-8C1A-498D-8317-1C12B15694DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F485F8A-8C1A-498D-8317-1C12B15694DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F485F8A-8C1A-498D-8317-1C12B15694DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781B5C1D-AAEB-41AF-AFFA-E0B3FF36B8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781B5C1D-AAEB-41AF-AFFA-E0B3FF36B8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781B5C1D-AAEB-41AF-AFFA-E0B3FF36B8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781B5C1D-AAEB-41AF-AFFA-E0B3FF36B8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{781B5C1D-AAEB-41AF-AFFA-E0B3FF36B8BB} = {F1901D97-1F2F-4CCC-B807-382BD3C31541}
 	EndGlobalSection
 EndGlobal
