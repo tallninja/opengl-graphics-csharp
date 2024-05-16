@@ -1,6 +1,7 @@
 [Oo]bj/
 [Bb]in/
 .nuget/
+.idea/
 _ReSharper.*
 packages/
 artifacts/
